@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Header = styled.header `
     width: 100%;
     height: 60px;
-    background-color: #080808;
+    background-color: ${ ({theme}) => theme.background};
     position: fixed;
     box-shadow: 0px 1px 5px rgba(56, 182, 255, 0.5);
     z-index: 2;
@@ -19,7 +19,7 @@ export const Container = styled.div `
     justify-content: space-between;
 
     > a {
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     width: 240px;
     min-width: 240px;
     border-right: 1px solid white;  
@@ -27,7 +27,7 @@ export const Container = styled.div `
 `;
 
 export const BlueColor = styled.span `
-    color: #38B6FF;
+    color: ${ ({theme}) => theme.primary};
 `;
 
 export const NavBar = styled.nav `
@@ -35,7 +35,7 @@ export const NavBar = styled.nav `
     align-items: center;
 
     > a {
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -43,7 +43,7 @@ export const NavBar = styled.nav `
     }
 
     > a:hover {
-    color: #38B6FF;    
+    color: ${ ({theme}) => theme.primary};    
     }
 
     @media(max-width: 1000px) {
@@ -56,7 +56,7 @@ export const MenuButton = styled.div`
     display: none;
 
     > svg {
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -64,7 +64,7 @@ export const MenuButton = styled.div`
     }
 
     > svg:hover {
-    color: #38B6FF;
+    color: ${ ({theme}) => theme.primary};
     }
 
     @media(max-width: 1000px) {
@@ -74,7 +74,7 @@ export const MenuButton = styled.div`
 
 export const SideBar = styled.div `
     position: fixed;
-    background-color: #080808; 
+    background-color: ${ ({theme}) => theme.background}; 
     top: 60px;
     left: 0px;
     width: 100%;
@@ -89,15 +89,15 @@ export const SideBar = styled.div `
     animation: sidebar 0.5s;
 
     > a h1 {
-    color: #fff;
-    border-bottom: 1px solid #38B6FF;
+    color: ${ ({theme}) => theme.text};
+    border-bottom: 1px solid ${ ({theme}) => theme.primary};
     transition: 0.3s;
     text-align: center;
     margin: 10px;
     }
 
     > a h1:hover {
-        color: #38B6FF;
+        color: ${ ({theme}) => theme.primary};
     }
 
     @media screen and (min-width: 1000px) {   

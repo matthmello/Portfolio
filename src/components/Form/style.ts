@@ -17,7 +17,7 @@ export const ContactForm = styled.form`
     border-radius: 10px;
     padding: 10px;
     background-color: #1d1d1d;
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     box-sizing: border-box;
     }
     
@@ -31,7 +31,7 @@ export const ContactForm = styled.form`
     border-radius: 10px;
     padding: 10px;
     background-color: #1d1d1d;
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     box-sizing: border-box;
     resize: none;
     }
@@ -42,10 +42,10 @@ export const ContactForm = styled.form`
     height: 10%;
     text-align: center;
     border-radius: 10px;
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     font-weight: bold;
     font-size: 16px;
-    background-color: #0f8cd5;
+    background-color: ${ ({theme}) => theme.secondary};
     cursor: pointer;   
     }
 `;

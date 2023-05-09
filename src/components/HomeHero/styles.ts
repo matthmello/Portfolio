@@ -20,8 +20,8 @@ export const HomeLeft = styled.div `
     text-align: center;
     margin: 10px;
     padding: 8px;
-    color: #fff;
-    border: 2px solid #fff;
+    color: ${ ({theme}) => theme.text};
+    border: 2px solid ${ ({theme}) => theme.text};
     border-radius: 6px;
     font-weight: bold;
     box-shadow: 0px 0px 2px 0px;
@@ -29,8 +29,8 @@ export const HomeLeft = styled.div `
     }
 
     > a:hover {
-    color: #38B6FF;
-    border: 2px solid #38B6FF;
+    color: ${ ({theme}) => theme.primary};
+    border: 2px solid ${ ({theme}) => theme.primary};
     box-shadow: 0px 0px 10px 0px;
     }
 

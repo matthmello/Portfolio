@@ -9,7 +9,7 @@ export const Container = styled.div`
     height: 100%;
     max-width: 1000px;
     padding: 20px;
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     word-spacing: 3px;
 `;
 
@@ -23,9 +23,9 @@ export const Title = styled.div`
     max-width: 300px;
     margin: auto;
     text-align: center;
-    box-shadow: 0px 1px 5px #38B6FF;
+    box-shadow: 0px 1px 5px ${ ({theme}) => theme.primary};
     border-radius: 6px;
-    background-color: #0f8cd5;
+    background-color: ${ ({theme}) => theme.secondary};
     }
 `;
 
@@ -43,38 +43,38 @@ export const ProjectContent = styled.div`
 export const Project01 = styled.div`
     width: 200px;
     height: 300px;
-    background-color: #1d1d1d;
+    background-color: ${ ({theme}) => theme.backgroundLight};
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 1px 6px #ffffff;
+    box-shadow: 0px 1px 6px ${ ({theme}) => theme.text};
 
     > h1 {
     padding: 5px;
     border-radius: 10px;
-    background-color: #0f8cd5;
-    box-shadow: 0px 1px 6px #96c3db;
-    color: #fff;
+    background-color: ${ ({theme}) => theme.secondary};
+    box-shadow: 0px 1px 6px ${ ({theme}) => theme.boxShadow};
+    color: ${ ({theme}) => theme.text};
     }
 `;
 
 export const Project02 = styled.div`
     width: 200px;
     height: 300px;
-    background-color: #1d1d1d;
+    background-color: ${ ({theme}) => theme.backgroundLight};
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 1px 6px #ffffff;
+    box-shadow: 0px 1px 6px ${ ({theme}) => theme.text};
 
     > h1 {
     padding: 5px;
     border-radius: 10px;
-    background-color: #0f8cd5;
-    box-shadow: 0px 1px 6px #96c3db;
-    color: #fff;
+    background-color: ${ ({theme}) => theme.secondary};
+    box-shadow: 0px 1px 6px ${ ({theme}) => theme.boxShadow};
+    color: ${ ({theme}) => theme.text};
     }
 
     @media(max-width: 1000px){
@@ -85,19 +85,19 @@ export const Project02 = styled.div`
 export const Project03 = styled.div`
     width: 200px;
     height: 300px;
-    background-color: #1d1d1d;
+    background-color: ${ ({theme}) => theme.backgroundLight};
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 1px 6px #ffffff;
+    box-shadow: 0px 1px 6px ${ ({theme}) => theme.text};
 
     > h1 {
     padding: 5px;
     border-radius: 10px;
-    background-color: #0f8cd5;
-    box-shadow: 0px 1px 6px #96c3db;
-    color: #fff;
+    background-color: ${ ({theme}) => theme.secondary};
+    box-shadow: 0px 1px 6px ${ ({theme}) => theme.boxShadow};
+    color: ${ ({theme}) => theme.text};
     }
 
     @media(max-width: 1000px){

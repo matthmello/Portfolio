@@ -1,11 +1,10 @@
 const theme = {
-    colors: {
     background: '#080808',
     backgroundLight: '#121212',
-    primary: '#111',
-    secondary: '#0070f3',
-    text: '#14231'
-    }
+    text: '#fff',
+    primary: '#38B6FF',
+    secondary: '#0f8cd5',
+    boxShadow: '#96c3db'
 };
-//fix this
+
 export default theme;

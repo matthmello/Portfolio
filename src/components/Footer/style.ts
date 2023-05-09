@@ -9,7 +9,7 @@ export const Container = styled.div`
     height: 100%;
     max-width: 1000px;
     padding: 20px;
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
     word-spacing: 3px;
 `;
 
@@ -22,9 +22,9 @@ export const Title = styled.div`
     max-width: 300px;
     margin: auto;
     text-align: center;
-    box-shadow: 0px 1px 5px #38B6FF;
+    box-shadow: 0px 1px 5px ${ ({theme}) => theme.primary};
     border-radius: 6px;
-    background-color: #0f8cd5;   
+    background-color: ${ ({theme}) => theme.secondary};   
     }
 `;
 
@@ -51,7 +51,7 @@ export const SocialLeft = styled.div`
 export const FormContainer = styled.div`
     width: 400px;
     height: 400px;
-    background-color: #131313;
+    background-color: ${ ({theme}) => theme.backgroundLight};
     border-radius: 10px;
     float: right; 
 
@@ -66,5 +66,5 @@ export const PageFooter = styled.div`
     padding: 20px;
     font-size: 18px;
     text-align: center;
-    color: #fff;
+    color: ${ ({theme}) => theme.text};
 `;

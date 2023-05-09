@@ -28,7 +28,7 @@ export default createGlobalStyle`
     body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     min-width: 300px;
-    background: #080808;
+    background: ${ ( {theme }) => (theme.background)};
     }
     
     .container{
