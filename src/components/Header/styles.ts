@@ -111,3 +111,26 @@ export const SideBar = styled.div `
     }
 `;
 
+export const SocialIconsBox = styled.div`
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+
+    > a svg {
+    cursor: pointer;
+    background-color: ${({theme }) => theme.text};
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;  
+    max-width: 50px;
+    transition: 0.3s;
+    display: flex;
+    }
+
+    > a svg:hover {
+    background-color: ${({theme }) => theme.primary};  
+    }
+`;
+

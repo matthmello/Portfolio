@@ -1,9 +1,8 @@
 import Head from "next/head";
-import { HomeContainer } from "../styles/Home";
 import HomeHero from "../components/HomeHero";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Footer from "../components/Footer";
+import About from "../components/Section/About";
+import Projects from "../components/Section/Projects";
+import Footer from "../components/Section/Footer";
 
 export default function Home() {
     return (

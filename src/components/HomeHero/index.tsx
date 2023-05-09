@@ -1,4 +1,4 @@
-import { HomeLeft, HomeRight } from "./styles";
+import { HomeLeft, HomeRight, SocialIconsBox, TypeWriterBox } from "./styles";
 import { BlueColor } from "../Header/styles";
 import { useEffect } from 'react'
 import Link from "next/link";
@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Typewriter from 'typewriter-effect'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import SocialIcons from "../SocialIcons";
 
 export default function HomeHero(){
 
@@ -31,21 +32,25 @@ export default function HomeHero(){
                     <BlueColor> M</BlueColor>
                     elo
                 </h1>
-            
-                <h2>
-                    <BlueColor>
-                        <Typewriter
-                            options={{
-                            strings: [ "Web Developer" ],
-                            autoStart: true,
-                            loop: true,
-                            }}
-                        />
-                    </BlueColor>
-                </h2>
 
-             
-        
+                <TypeWriterBox>
+                    <h2>
+                        <BlueColor>
+                            <Typewriter
+                                options={{
+                                strings: [ "Web Developer" ],
+                                autoStart: true,
+                                loop: true,
+                                }}
+                            />
+                        </BlueColor>
+                    </h2>
+                </TypeWriterBox>
+
+                <SocialIconsBox>
+                    <SocialIcons/>
+                </SocialIconsBox>               
+
                 <Link
                     href="#footer" 
                     scroll={false}

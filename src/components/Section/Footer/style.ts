@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Contact = styled.footer`
-    height: 600px;
+    height: 100%;
 `;
 
 export const Container = styled.div`
@@ -47,6 +47,30 @@ export const SocialLeft = styled.div`
         display: none;
     }
 `;
+
+export const SocialIconsBox = styled.div`
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+
+    > a svg {
+    cursor: pointer;
+    background-color: ${({theme }) => theme.text};
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;  
+    max-width: 50px;
+    transition: 0.3s;
+    display: flex;
+    }
+
+    > a svg:hover {
+    background-color: ${({theme }) => theme.primary};  
+    }
+`;
+
 
 export const FormContainer = styled.div`
     width: 400px;

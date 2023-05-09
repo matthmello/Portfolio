@@ -9,10 +9,6 @@ export const HomeLeft = styled.div `
     flex-direction: column;
     text-align: center;
 
-    > h1 {
-    margin-bottom: 4px;
-    }
-
     > a {
     width: 22%;
     min-width: 160px;
@@ -42,6 +38,33 @@ export const HomeLeft = styled.div `
         max-width: 300px;
     }
 `; 
+
+export const TypeWriterBox = styled.div`
+    margin: 6px;
+`;
+
+export const SocialIconsBox = styled.div`
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+    > a svg {
+    cursor: pointer;
+    background-color: ${({theme }) => theme.text};
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;  
+    max-width: 50px;
+    transition: 0.3s;
+    display: flex;
+    }
+
+    > a svg:hover {
+    background-color: ${({theme }) => theme.primary};  
+    }
+`;
 
 export const HomeRight= styled.div `
     width: 50%;

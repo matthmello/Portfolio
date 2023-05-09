@@ -1,7 +1,8 @@
-import { BlueColor, Container, Header, MenuButton, NavBar, SideBar } from './styles';
+import { BlueColor, Container, Header, MenuButton, NavBar, SideBar, SocialIconsBox } from './styles';
 import Link from 'next/link'
 import { FaBars } from 'react-icons/fa'
 import { useState } from 'react'
+import SocialIcons from '../SocialIcons';
 
 export default function Navbar(){
     const [sidebar, setSidebar] = useState(false);
@@ -33,11 +34,14 @@ export default function Navbar(){
                 </MenuButton>
                 
                 {sidebar ?
-                <SideBar>
+                <SideBar>   
                     <Link href="#home" scroll={false} onClick={showSideBar}><h1>Home</h1></Link>
                     <Link href="#about" scroll={false} onClick={showSideBar}><h1>About</h1></Link>
                     <Link href="#projects" scroll={false} onClick={showSideBar}><h1>Projects</h1></Link>
                     <Link href="#footer" scroll={false} onClick={showSideBar}><h1>Contact</h1></Link>                    
+                    <SocialIconsBox>
+                        <SocialIcons/>
+                    </SocialIconsBox>  
                 </SideBar> : null}
             </Container>               
         </Header>       

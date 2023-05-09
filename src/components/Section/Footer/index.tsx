@@ -1,12 +1,14 @@
 import Image from 'next/image'
-import Form from '../Form'
+import Form from '../../Form'
 import { Contact, 
          FormContainer, 
          Container, 
          PageFooter, 
          SocialLeft, 
          Title, 
-         ContactContainer } from './style'
+         ContactContainer, 
+         SocialIconsBox } from './style'
+import SocialIcons from '../../SocialIcons'
 
 export default function Footer(){
     return(
@@ -19,8 +21,11 @@ export default function Footer(){
                     <SocialLeft>  
                         <div>
                             <h1>
-                                Follow My Social Medias: 
-                                
+                            Follow My Social Medias: 
+                            <SocialIconsBox>
+                                <SocialIcons/>
+                            </SocialIconsBox>   
+
                             </h1>                         
                         </div>
                         <Image
