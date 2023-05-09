@@ -1,3 +1,10 @@
 export { default as GitHub } from "./github.svg"
 export { default as LinkedIn } from "./linkedin.svg"
 export { default as Instagram } from "./instagram.svg"
+
+export { default as HtmlIcon } from "./html.svg"
+export { default as CssIcon } from "./css.svg"
+export { default as JavaScriptIcon } from "./javascript.svg"
+export { default as TypeScriptIcon } from "./typescript.svg"
+export { default as ReactIcon } from "./react.svg"
+export { default as NodeJsIcon} from "./nodejs.svg"

@@ -63,3 +63,48 @@ export const SkillsText = styled.div`
     font-weight: bold;
     padding: 10px;
 `;
+
+export const SkillsIconsBox = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+    text-align: center;
+
+    @media(max-width: 1000px) {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 900px;        
+    }
+
+    > div svg {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+
+    @media(max-width: 1000px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        float: left; 
+        width: 100px;
+        margin: 10px;
+    }
+    }
+
+    > div svg:hover {
+        background-color: ${ ({theme}) => theme.secondary};
+    }
+
+    > h3 {
+    margin-top: 20px;
+    text-align: center;
+    }
+`;

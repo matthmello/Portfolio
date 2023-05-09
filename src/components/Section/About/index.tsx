@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { AboutContent, AboutImage, AboutSection, AboutText, Container, SkillsText, Title } from "./style"
+import { AboutContent, AboutImage, AboutSection, AboutText, Container, SkillsIconsBox, SkillsText, Title } from "./style"
+import SkillsIcons from "../../SkillsIcons"
 
 export default function About(){
     return(
@@ -33,7 +34,9 @@ export default function About(){
                     <p>Here is the list of technologies I learned since my first contact with programming:</p>
                 </SkillsText>
 
-                {/*Put Skills Here*/}
+                <SkillsIconsBox data-aos="fade-in">
+                    <SkillsIcons/>
+                </SkillsIconsBox>
             </Container>
         </AboutSection>
     )
