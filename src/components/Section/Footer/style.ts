@@ -22,9 +22,8 @@ export const Title = styled.div`
     max-width: 300px;
     margin: auto;
     text-align: center;
-    box-shadow: 0px 1px 5px ${ ({theme}) => theme.primary};
     border-radius: 6px;
-    background-color: ${ ({theme}) => theme.secondary};   
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};   
     }
 `;
 
@@ -32,6 +31,11 @@ export const ContactContainer = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    @media(max-width: 900px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
 `;
 
 export const SocialLeft = styled.div`
@@ -43,9 +47,17 @@ export const SocialLeft = styled.div`
     text-align: center;
     float: left;
 
-    @media(max-width: 900px){
-        display: none;
+    > img {
+    margin: 20px;
     }
+
+    @media(max-width: 900px){
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    }
+
 `;
 
 export const SocialIconsBox = styled.div`
@@ -53,7 +65,7 @@ export const SocialIconsBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 20px;
 
     > a svg {
     cursor: pointer;

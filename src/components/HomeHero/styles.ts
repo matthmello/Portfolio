@@ -74,7 +74,7 @@ export const HomeRight= styled.div `
     justify-content: center; 
 
     > img {
-        border-radius: 50%
+        border-radius: 50%;
     }
 
     @media (max-width: 1000px) {

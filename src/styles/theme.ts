@@ -4,7 +4,7 @@ const theme = {
     text: '#fff',
     primary: '#38B6FF',
     secondary: '#0f8cd5',
-    boxShadow: '#96c3db'
+    boxShadow: 'rgba(56, 182, 255, 0.5)'
 };
 
 export default theme;

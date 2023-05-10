@@ -48,4 +48,8 @@ export const ContactForm = styled.form`
     background-color: ${ ({theme}) => theme.secondary};
     cursor: pointer;   
     }
+
+    > button:active {
+        background-color: ${ ({theme}) => theme.boxShadow};
+    }
 `;

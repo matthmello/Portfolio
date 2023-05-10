@@ -21,21 +21,21 @@ export default function Footer(){
                     <SocialLeft>  
                         <div>
                             <h1>
-                            Follow My Social Medias: 
+                                Follow My Social Medias: 
+                            </h1>  
                             <SocialIconsBox>
                                 <SocialIcons/>
                             </SocialIconsBox>   
-
-                            </h1>                         
+                       
                         </div>
                         <Image
-                            src="/contact-picture.png"
+                            src="/contact-image.png"
                             width={160}
                             height={160}
                             alt=""
                         />
                         <div>
-                            <h1>Contact me by email: </h1>
+                            <h2>Contact me by email: </h2>
                             <h2>matheus_lpo@hotmail.com</h2>
                         </div>
                     </SocialLeft>

@@ -20,12 +20,11 @@ export const Title = styled.div`
     width: 100%;
 
     > h1 {
-    max-width: 300px;
     margin: auto;
+    max-width: 300px;
+    border-radius: 6px; 
     text-align: center;
-    box-shadow: 0px 1px 5px ${ ({theme}) => theme.primary};
-    border-radius: 6px;
-    background-color: ${ ({theme}) => theme.secondary};
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow}; 
     }
 `;
 
@@ -45,17 +44,31 @@ export const Project01 = styled.div`
     height: 300px;
     background-color: ${ ({theme}) => theme.backgroundLight};
     border-radius: 15px;
+    padding: 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    box-shadow: 0px 1px 6px ${ ({theme}) => theme.text};
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
 
-    > h1 {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: ${ ({theme}) => theme.secondary};
-    box-shadow: 0px 1px 6px ${ ({theme}) => theme.boxShadow};
-    color: ${ ({theme}) => theme.text};
+    > h3 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 4px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
+    }
+    > img {
+    width: 100%;
+    height: 50%;
+    margin: 10px 0;
+    }
+
+    > p {
+    text-align: center;
+    margin: 10px 0;
     }
 `;
 
@@ -67,13 +80,12 @@ export const Project02 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 1px 6px ${ ({theme}) => theme.text};
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
 
     > h1 {
     padding: 5px;
     border-radius: 10px;
-    background-color: ${ ({theme}) => theme.secondary};
-    box-shadow: 0px 1px 6px ${ ({theme}) => theme.boxShadow};
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
     color: ${ ({theme}) => theme.text};
     }
 
@@ -90,13 +102,12 @@ export const Project03 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 1px 6px ${ ({theme}) => theme.text};
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
 
     > h1 {
     padding: 5px;
     border-radius: 10px;
-    background-color: ${ ({theme}) => theme.secondary};
-    box-shadow: 0px 1px 6px ${ ({theme}) => theme.boxShadow};
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
     color: ${ ({theme}) => theme.text};
     }
 

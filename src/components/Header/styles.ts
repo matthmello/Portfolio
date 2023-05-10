@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Header = styled.header `
     width: 100%;
     height: 60px;
-    background-color: ${ ({theme}) => theme.background};
+    background-color: ${({theme}) => theme.background};
     position: fixed;
-    box-shadow: 0px 1px 5px rgba(56, 182, 255, 0.5);
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
     z-index: 2;
 `;
 

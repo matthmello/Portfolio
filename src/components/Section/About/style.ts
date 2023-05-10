@@ -22,9 +22,8 @@ export const Title = styled.div`
     max-width: 300px;
     margin: auto;
     text-align: center;
-    box-shadow: 0px 1px 5px ${ ({theme}) => theme.primary};
-    border-radius: 6px;
-    background-color: ${ ({theme}) => theme.secondary};        
+    border-radius: 6px; 
+    box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};     
     }
 `;
 
