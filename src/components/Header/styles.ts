@@ -39,11 +39,11 @@ export const NavBar = styled.nav `
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
-    transition: .3s;  
+    transition: 0.3s;  
     }
 
     > a:hover {
-    color: ${ ({theme}) => theme.primary};    
+    color: ${ ({theme}) => theme.primary};  
     }
 
     @media(max-width: 1000px) {
@@ -131,6 +131,7 @@ export const SocialIconsBox = styled.div`
 
     > a svg:hover {
     background-color: ${({theme }) => theme.primary};  
+    transform: scale(1.1);
     }
 `;
 

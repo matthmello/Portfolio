@@ -62,7 +62,8 @@ export const SocialIconsBox = styled.div`
     }
 
     > a svg:hover {
-    background-color: ${({theme }) => theme.primary};  
+    background-color: ${({theme }) => theme.primary};
+    transform: scale(1.1);  
     }
 `;
 

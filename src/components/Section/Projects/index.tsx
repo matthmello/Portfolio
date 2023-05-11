@@ -1,4 +1,4 @@
-import { Container, 
+import { Container,  
          Project01,
          Project02, 
          Project03, 
@@ -17,14 +17,14 @@ export default function Projects(){
                 </Title>
                 <ProjectContent data-aos="zoom-in">
                     <Project01>
-                        <Image 
-                            src="/portfolio-image.png"
-                            width={200}
-                            height={150}
-                            alt="portfolio-image"
-                        />
-                        <h3>Portfolio</h3>
-                        <p>Created to show my projects and skills</p>
+                            <Image 
+                                src="/portfolio-image.png"
+                                width={200}
+                                height={150}
+                                alt="portfolio-image"
+                            />
+                            <h3>Portfolio</h3>
+                            <p>Created to show my projects and skills</p>
                     </Project01>
 
                     <Project02>

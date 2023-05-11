@@ -100,6 +100,7 @@ export const SkillsIconsBox = styled.div`
 
     > div svg:hover {
         background-color: ${ ({theme}) => theme.secondary};
+        transform: scale(1.1);
     }
 
     > h3 {
