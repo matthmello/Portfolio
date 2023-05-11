@@ -49,26 +49,13 @@ export const Project01 = styled.div`
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;
     box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
 
-    > h3 {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
-    padding: 4px;
-    border-radius: 6px;
+    > h1 {
+    padding: 5px;
+    border-radius: 10px;
     box-shadow: 0px 1px 5px ${({theme}) => theme.boxShadow};
-    }
-    > img {
-    width: 100%;
-    height: 50%;
-    margin: 10px 0;
-    }
-
-    > p {
-    text-align: center;
-    margin: 10px 0;
+    color: ${ ({theme}) => theme.text};
     }
 `;
 

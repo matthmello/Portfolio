@@ -17,14 +17,7 @@ export default function Projects(){
                 </Title>
                 <ProjectContent data-aos="zoom-in">
                     <Project01>
-                            <Image 
-                                src="/portfolio-image.png"
-                                width={200}
-                                height={150}
-                                alt="portfolio-image"
-                            />
-                            <h3>Portfolio</h3>
-                            <p>Created to show my projects and skills</p>
+                        <h1>Coming Soon</h1>
                     </Project01>
 
                     <Project02>
