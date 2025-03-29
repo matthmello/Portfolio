@@ -68,9 +68,9 @@ export default function HomeHero(){
                 data-aos-once="false"
             >
                 <Image 
-                    src='/profile-picture.png'
+                    src='/profile-pict.png'
                     width={460}
-                    height={400}
+                    height={500}
                     alt='profile'
                     priority={true}
                 />

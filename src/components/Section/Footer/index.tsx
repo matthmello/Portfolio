@@ -45,7 +45,7 @@ export default function Footer(){
                 </ContactContainer>   
             </Container>
             <PageFooter>
-                &copy; 2023 Matheus Melo | All rights reserved.
+                &copy; 2025 Matheus Melo | All rights reserved.
             </PageFooter>
         </Contact>
     )

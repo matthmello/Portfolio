@@ -10,7 +10,7 @@ export default function Form(){
     const [message, setMessage] = useState('')
 
     function sendEmail(e){
-        e.preventDefault(e)
+        e.preventDefault()
         alert("Mensagem Enviada!")
 
         const templateParams = {

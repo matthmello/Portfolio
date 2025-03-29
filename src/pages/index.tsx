@@ -11,7 +11,7 @@ export default function Home() {
                 <title>Matheus Melo | Web Developer</title>
                 <meta name="description" content="My Personal Portfolio" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/icon.ico" />
             </Head>
 
             <main id="home" className="container">
